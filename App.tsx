@@ -6,12 +6,11 @@ import { StackNavigator } from './src/navigator/StackNavigator';
 
 const App = () => {
   return (
-    // <View >
 
     <NavigationContainer>
       <StackNavigator />
     </NavigationContainer>
-    // </View>
+
   )
 }
 
