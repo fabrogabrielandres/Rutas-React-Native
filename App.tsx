@@ -5,7 +5,7 @@ import { StyleSheet, Text, View } from 'react-native'
 const App = () => {
   return (
     <View>
-      <Text>holas</Text>
+      <Text>App</Text>
     </View>
   )
 }
