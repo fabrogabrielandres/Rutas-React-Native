@@ -2,7 +2,8 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native'
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { StackNavigator } from './StackNavigator';
-import SettingScreens from '../screens/SettingScreens';
+import { SettingScreens } from '../screens/SettingScreens';
+
 
 
 

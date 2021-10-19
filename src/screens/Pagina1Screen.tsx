@@ -1,5 +1,5 @@
 import { StackScreenProps } from '@react-navigation/stack';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { View, Button, Text, TouchableOpacity } from 'react-native';
 import { styles } from '../theme/AppTheme';
@@ -7,8 +7,6 @@ import { styles } from '../theme/AppTheme';
 interface Props extends StackScreenProps<any, any> { };
 
 export const Pagina1Screen = ({ navigation }: Props) => {
-
-
 
 
     return (
@@ -32,10 +30,10 @@ export const Pagina1Screen = ({ navigation }: Props) => {
                         id: 1,
                         nombre: "pedro"
                     })}
-                    style={{...styles.botonGrande, backgroundColor:"purple"}}
+                    style={{ ...styles.botonGrande, backgroundColor: "purple" }}
                 >
                     <Text
-                    style={styles.botonGrandeText}
+                        style={styles.botonGrandeText}
                     >pedro</Text>
                 </TouchableOpacity>
 
@@ -44,12 +42,12 @@ export const Pagina1Screen = ({ navigation }: Props) => {
                         id: 2,
                         nombre: "maria"
                     })}
-                    style={{...styles.botonGrande, backgroundColor:"orange"}}
+                    style={{ ...styles.botonGrande, backgroundColor: "orange" }}
                 >
                     <Text
-                    style={
-                        styles.botonGrandeText
-                    }
+                        style={
+                            styles.botonGrandeText
+                        }
                     >maria</Text>
                 </TouchableOpacity>
             </View>

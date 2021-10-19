@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native'
 
-const SettingScreens = () => {
+export const SettingScreens = () => {
     return (
         <View>
             <Text>Settindddddddddddg</Text>
@@ -8,6 +8,4 @@ const SettingScreens = () => {
     )
 }
 
-export default SettingScreens
 
-const styles = StyleSheet.create({})
