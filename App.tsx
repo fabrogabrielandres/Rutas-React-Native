@@ -3,7 +3,7 @@ import React from 'react';
 
 import { StyleSheet, Text, View } from 'react-native';
 import { MenuLateralBasico } from './src/navigator/MenuLateralBasico';
-// import { StackNavigator } from './src/navigator/StackNavigator';
+import { StackNavigator } from './src/navigator/StackNavigator';
 
 const App = () => {
   return (
@@ -18,4 +18,3 @@ const App = () => {
 
 export default App
 
-const styles = StyleSheet.create({})
