@@ -15,7 +15,7 @@ export type RootStackParms = {
     PersonaScreen: {id: number, nombre: string},
 }
 
-const Stack = createNativeStackNavigator<RootstackParms>();
+const Stack = createNativeStackNavigator<RootStackParms>();
 
 export const StackNavigator = () => {
     return (
