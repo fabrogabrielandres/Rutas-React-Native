@@ -1,9 +1,10 @@
 import React from 'react';
 
-import { StyleSheet, Text, useWindowDimensions, View } from 'react-native'
-import { createDrawerNavigator, DrawerContentComponentProps } from '@react-navigation/drawer';
+import { Image, StyleSheet, Text, useWindowDimensions, View } from 'react-native'
+import { createDrawerNavigator, DrawerContentComponentProps, DrawerContentScrollView } from '@react-navigation/drawer';
 import { StackNavigator } from './StackNavigator';
 import { SettingScreens } from '../screens/SettingScreens';
+import { styles } from '../theme/AppTheme';
 
 
 
@@ -18,7 +19,7 @@ export const MenuLateral = () => {
     return (
 
         <Drawer.Navigator
-            // drawerContent={ (props: DrawerContentComponentProps )=> <MenuInterno {...props} /> } 
+            drawerContent={ (props)=> <MenuInterno {...props} /> } 
         >
             <Drawer.Screen name="StackNavigator" component={StackNavigator} />
             <Drawer.Screen name="SettingScreens" component={SettingScreens} />
@@ -27,12 +28,24 @@ export const MenuLateral = () => {
 }
 
 
-// const MenuInterno = ( {...props} )=>{
+const MenuInterno = ( props:DrawerContentComponentProps )=>{
+    
+    
   
     
     
-//     return (
-//         <Text>menu interno</Text>
-//     )
-// }
+    return (
+        <DrawerContentScrollView>
+            <View style={styles.avatarContainer}>
+                <Image
+                    style={
+                        styles.avatar
+                    }
+                    source={{ 
+                    uri:"https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"}}
+                />
+            </View>
+        </DrawerContentScrollView>
+    )
+}
 
