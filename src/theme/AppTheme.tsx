@@ -20,20 +20,29 @@ export const styles = StyleSheet.create({
         borderRadius: 20,
         margin: 2
     },
-    botonGrandeText:{
-        fontSize:20,
-        color:"white",
-        fontWeight:"bold"
+    botonGrandeText: {
+        fontSize: 20,
+        color: "white",
+        fontWeight: "bold"
     },
-    avatarContainer:{
-        marginTop:10,
-        display:'flex',
-        alignItems:"center"
+    avatarContainer: {
+        marginTop: 10,
+        display: 'flex',
+        alignItems: "center"
     },
-    avatar:{
-        height:150,
-        width:150,
-        borderRadius:100
-    }
+    avatar: {
+        height: 150,
+        width: 150,
+        borderRadius: 100
+    },
+    menuContainer: {
+        alignItems: "center"
+    },
+    menuText: {
+        marginVertical: 5,
+        fontSize: 20,
+    },
+
+
 
 })
